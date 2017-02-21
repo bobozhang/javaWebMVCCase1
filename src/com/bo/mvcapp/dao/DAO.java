@@ -9,6 +9,8 @@ import java.util.List;
  */
 public class DAO<T> {
 	
+	
+	//运用反射
 	private Class<T> clazz;
 	/*
 	 * 返回某个字段的值：如返回customerName,或返回数据表中有多少条记录等
