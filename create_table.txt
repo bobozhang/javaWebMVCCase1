@@ -1,0 +1,8 @@
+create table customer(
+id int primary key auto_increment,
+name varchar(30) not null unique,
+address varchar(30),
+phone varchar(30)
+);
+
+alter table customer add constraint uk_name unique(name);

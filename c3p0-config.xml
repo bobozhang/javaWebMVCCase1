@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<named-config name="mvcapp">
+		<property name="user">root</property>
+		<property name="password">bobo1215</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl"></property>
+		<!--当连接池中的连接耗尽的时候c3p0一次同时获取的连接数。Default: 3 -->
+		<property name="acquireIncrement">3</property>
+		<!--初始化的池大小 -->   
+        <property name="initialPoolSize">2</property> 
+         <!-- 最多可以有多少个连接connection -->  
+        <property name="maxPoolSize">5</property>  
+        <!-- 最少的池中有几个连接 -->  
+        <property name="minPoolSize">2</property> 
+         <!-- 批处理的语句 
+         -->  
+        <property name="maxStatements">50</property> 
+        <property name="maxStatementsPerConnection">5</property>
+	</named-config>
+</c3p0-config>
