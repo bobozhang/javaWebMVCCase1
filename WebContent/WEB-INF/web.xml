@@ -9,4 +9,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+  	<description>customer</description>
+  	<display-name>CustomerServlet</display-name>
+  	<servlet-name>customerServlet</servlet-name>
+  	<servlet-class>com.bo.mvcapp.servlet.CustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>customerServlet</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
 </web-app>
